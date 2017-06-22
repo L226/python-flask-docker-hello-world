@@ -1,15 +1,18 @@
-# Simple Python Flask Dockerized Application#
+# Simple Python Flask Dockerised API#
 
-Build the image using the following command
-
-```bash
-$ docker build -t simple-flask-app:latest .
-```
-
-Run the Docker container using the command shown below.
+Build
 
 ```bash
-$ docker run -d -p 5000:5000 simple-flask-app
+$ docker build -t api .
 ```
 
-The application will be accessible at http:127.0.0.1:5000 or if you are using boot2docker then first find ip address using `$ boot2docker ip` and the use the ip `http://<host_ip>:5000`
+Run
+
+```bash
+$ docker run -it -p 8080:8080 api
+```
+
+```bash
+$ curl http://localhost:8080
+> "hello world"
+```
