@@ -5,6 +5,6 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 
-EXPOSE 8080
+EXPOSE 2368
 
-CMD ["gunicorn", "-w", "1", "-b", ":8080", "--log-level", "info", "-t", "60", "app:app", "--worker-class", "gevent"]
+CMD ["gunicorn", "-w", "1", "-b", ":2368", "--log-level", "info", "-t", "60", "app:app", "--worker-class", "gevent"]
