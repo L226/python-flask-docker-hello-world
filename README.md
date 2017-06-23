@@ -1,8 +1,8 @@
 # Simple Python Flask Dockerised API
 
-### [docker image](https://hub.docker.com/r/lfriescozero/python-api-demo/)
+[Docker image](https://hub.docker.com/r/lfriescozero/python-api-demo/)
 
-### Note: it appears that Gunicorn does not work on ECS with an ALB. [Possibly this.](https://github.com/benoitc/gunicorn/issues/1194)
+Note: it appears that Gunicorn does not work on ECS with an ALB. [Possibly this.](https://github.com/benoitc/gunicorn/issues/1194)
 
 Build
 

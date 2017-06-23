@@ -5,6 +5,6 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 
-EXPOSE 2368 2369
+EXPOSE 2368
 
 CMD ["uwsgi", "wsgi.ini"]
